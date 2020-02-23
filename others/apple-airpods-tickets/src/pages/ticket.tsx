@@ -6,10 +6,11 @@ export interface IProps {
   img?: string;
   gift: string
   description: string
+  call: string
 }
 
 const Ticket: React.FunctionComponent<IProps> = props => {
-  const { img, gift, description } = props;
+  const { img, gift, description, call } = props;
 
   const cls = 'ticket';
   const clss = [cls];
@@ -28,7 +29,7 @@ const Ticket: React.FunctionComponent<IProps> = props => {
         <div className="ticket-bottom-left"></div>
         <div className="ticket-bottom-right"></div>
         <div className="ticket-bottom-top">{description}</div>
-        <a className="ticket-bottom-bottom" href="tel:12714338118">
+        <a className="ticket-bottom-bottom" href={`tel:${call}`}>
           <div className="ticket-button">立即使用</div>
         </a>
       </div>
