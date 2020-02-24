@@ -101,5 +101,11 @@
       color: rgb(255, 0, 98);
       background-color: rgb(255, 248, 146);
     }
+
+    &-disabled {
+      color: white !important;
+      background-color: #ccc !important;
+      border-color: #ccc !important;
+    }
   }
 }
