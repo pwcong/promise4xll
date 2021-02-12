@@ -4,5 +4,5 @@
 
 ## Counter
 
-BIG: **3**
-SMALL: **3**
+BIG: **2**
+SMALL: **2**
